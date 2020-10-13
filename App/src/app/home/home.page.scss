@@ -1,0 +1,45 @@
+ion-item{
+  float: left;
+}
+
+.list-item{
+  cursor: pointer;
+  border-bottom:none;
+  padding-bottom:5px;
+  transition: 200ms;
+  width:100px;
+  text-align: center;
+}
+
+.list-item:hover,.item-active{
+  border-bottom:4px solid var(--ion-color-primary);
+  transition: 200ms;
+}
+
+.list-item-button{
+  background-color: var(--ion-color-primary);
+  color:white;
+  padding:10px 20px 10px 20px;
+  margin:5px 0 5px 0;
+  border-radius:20px;
+  transition: 300ms;
+}
+
+.list-item-button:hover{
+  background-color: var(--ion-color-primary-shade);
+  cursor: pointer;
+  transition: 300ms;
+}
+
+
+.slider-container{
+  width: 100%;
+  height: 50%;
+  background-color: bisque;
+  box-shadow: 1px 2px 20px 0px #00000070;
+}
+
+.card-container{
+  margin: 0 auto;
+  width: 100%;
+}
