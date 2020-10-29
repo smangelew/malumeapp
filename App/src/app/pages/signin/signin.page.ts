@@ -27,8 +27,6 @@ export class SigninPage implements OnInit {
 
   }
 
-  google() {
-    console.log("google clicked");
-
+  
   }
 }

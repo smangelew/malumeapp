@@ -12,4 +12,12 @@ export class SignupPage implements OnInit {
   ngOnInit() {
   }
 
+  ParentSignup() {
+    console.log(" ParentSignup");
+  }
+
+  DriverSignup() {
+    console.log("Driver");
+
+  }
 }

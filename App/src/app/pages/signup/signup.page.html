@@ -1,9 +1,58 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>signup</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-test
+  <img src="https://wallpaperaccess.com/full/30100.jpg" style="width:100%;height: 100%;position: absolute;" alt="">
+  <ion-grid  id="signup_form" >
+    <ion-row >
+      <ion-col size="6" offset="3">
+        <ion-card>
+          <ion-card-header style="text-align: center;">
+            <ion-card-title>Signup</ion-card-title>
+            <ion-card-subtitle>Login | Registered Members</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" >
+              <ion-item>
+                <ion-label position="floating">Name<ion-text color="danger">*</ion-text></ion-label>
+                <ion-input required formControlName="Name" type="text"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">Surname<ion-text color="danger">*</ion-text></ion-label>
+                <ion-input required formControlName="Surname" type="text"></ion-input>
+              </ion-item><ion-item>
+                <ion-label position="floating">Id Number<ion-text color="danger">*</ion-text></ion-label>
+                <ion-input required formControlName="IdNumber`" type="text"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">Email</ion-label>ion-text color="danger">*</ion-text></ion-label>
+                <ion-input required formControlName="email" type="text"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">Contact Number<ion-text color="danger">*</ion-text></ion-label>
+                <ion-input required formControlName="Cnumber" type="text"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">Address<ion-text color="danger">*</ion-text></ion-label>
+                <ion-input required formControlName="address" type="text"></ion-input>
+              </ion-item>
+
+            <ionSelect value ={role} placeholder="selecct one"onIonChange = {e=> setRole( e.details.value)}>
+
+             <ionSelectOption value= "parent">Parent</ionSelectOption>
+             <ionSelectOption value= "driver">Driver</ionSelectOption>
+            </ionSelect>
+            
+              <ion-button expand="block" color="primary" style="margin-top:20px;" (click)="()">
+               Next
+              </ion-button>
+              
+              
+            </form>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+    
+ 
 </ion-content>
+
